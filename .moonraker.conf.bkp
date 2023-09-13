@@ -55,3 +55,11 @@ path = ~/klipper_network_status
 origin = https://github.com/JeremyRuhland/klipper_network_status.git
 install_script = install.sh
 
+[update_manager client klipper_lcd_menu]
+type = git_repo
+channel = dev
+primary_branch = main
+path = ~/printer_data/config/lcd_menu
+origin = https://github.com/DasBurninator/klipper_lcd_menu.git
+managed_services = klipper
+
