@@ -75,3 +75,18 @@ managed_services = klipper
 primary_branch = main
 install_script = install.sh
 
+[update_manager octoapp]
+type = git_repo
+channel = beta
+path = /home/wences/octoapp
+origin = https://github.com/crysxd/OctoApp-Plugin.git
+env = /home/wences/octoapp-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	octoapp
+
+[announcements]
+subscriptions = 
+	octoapp.
+
